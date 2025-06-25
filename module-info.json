@@ -1,9 +1,9 @@
 {
-    "date": "2025-05-22 17:23:35",
+    "date": "2025-06-25 09:20:36",
     "name": "AIBySimplicite",
     "format": "json",
     "files": ["AIBySimplicite.json"],
-    "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module_ai.git"}},
+    "repository": {"origin": {"uri": "https://github.com/CBimont/AiForAutoSetup.git"}},
     "version": "0.31",
-    "platform": "6.2.10"
+    "platform": "6.2.11"
 }
