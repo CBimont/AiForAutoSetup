@@ -367,6 +367,11 @@ onUnloadTimesheet(ctn, obj, ts) {
 	super.onUnloadTimesheet(ctn, obj, ts);
 }
 
+/**
+ * Generates a form for displaying user parameters
+ * @param {Object} providersParams - The parameters to display
+ * @returns {HTMLElement} The generated form
+ */
 getUserParametersForm(providersParams){
 	const grantLang = $grant.lang == 'FRA'?'FRA':'ENU'; 
 	let form = document.createElement('form');
@@ -411,9 +416,11 @@ getUserParametersForm(providersParams){
 	return form;
 }
 
-
+/**
+ * Retrieves user parameters from the AIProvider business object
+ * @returns {Object} The user parameters object
+ */
 getUserParameters(){
-	console.log("getuserparams");
 	let params =this.item.aiPrvUserParameters;
 	let defaultValue ={};
 	for (const [key, value] of Object.entries(params)) {
